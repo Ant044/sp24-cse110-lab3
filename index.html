@@ -6,13 +6,28 @@
     <meta charset="UTF-8" />
     <meta name="keywords" content="gathering,meeting,congregating,consulting">
     <link rel="icon" type="image/x-icon" href="Favicon.png">
+    <link rel="stylesheet" href="styleSheet.css">
+    <style>
+      li{
+        color: color(xyz 55 55 5);
+        background-color: color-mix(in srgb, lightblue 95%, cyan);
+      }
+    </style>
   </head>
 
   <body>
+    <div id="menuBar">
+      <h3 class="menuBarItem">This</h3>
+      <h3 class="menuBarItem">Is</h3>
+      <h3 class="menuBarItem" style="color: crimson;">FIXED</h3>
+    </div>
     <header>
-      <h1>Meeting 7 Plans</h1> 
-      <h3>June 37, 2055</h3>
-      <img src="Resources/Meeting7.png" width="400" alt="Ice Gun Depiction">
+      <div>
+        <h1 id="title" class="myFont">Meeting 7 Plans</h1> 
+        <h3>June 37, 2055</h3>
+        <img src="Resources/Meeting7.png" width="400" alt="Ice Gun Depiction" id="titleImage">
+        <button class="myButton">DO NOT PRESS</button>
+      </div>
       <hr>
       <h3>Table of Contents</h3>
       <nav>
@@ -26,9 +41,9 @@
 
     <main>
       <hr>
-      <h2 id="Overview">Overview</h2>
+      <h2 id="Overview"class="myFont">Overview</h2>
       During the <b>6th meeting</b>, we finalized decisions made in
-      <ul>
+      <ul id="meetingList">
         <li>Meeting 3</li>
         <li>Meeting 4</li>
         <li>Meeting 5</li>
@@ -44,8 +59,8 @@
         </p>
       </details>
       <div>
-        <b>This is a drawing of what the Ice gun will look like</b>
-        <img src="Resources/IceGun.png" width="700" alt="Ice Gun Depiction">
+        <b>This is a drawing of what the Ice gun will look like</b><br>
+        <img src="Resources/IceGun.png" width="700" alt="Ice Gun Depiction" id="iceImg">
       </div>
       <p>
         In the seventh meeting, we will finalize the specification of the <i>Ice Gun</i>.
@@ -59,7 +74,7 @@
         </ul>
       </div>
       <hr>
-      <h2 id="Specification">Specification</h2>
+      <h2 id="Specification"class="myFont">Specification</h2>
       <h3>Size</h3>
       <p>Make it SUPER BIG</p>
       <h3>Color</h3>
@@ -67,7 +82,7 @@
       <hr>
 
 <!--Other-->
-      <h2 id="Other">Other</h2>
+      <h2 id="Other"class="myFont">Other</h2>
       <h3>Random audio</h3>
       <audio controls>
         <source src="Resources/Celstain.mp3" type="audio/mpeg">
@@ -75,7 +90,7 @@
 
       <h3>Random video</h3>
       <video controls>
-        <source src="Resources/Droplets.mp4" type="video/mp4">
+        <source src="Resources/Droplets.mp4" type="video/mp4" id="myVideo">
       </video>
 
     </main>
