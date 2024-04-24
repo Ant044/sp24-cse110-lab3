@@ -6,14 +6,27 @@
     --green3: hsl(135, 74%, 64%);
 }
 
+/*Universal*/
+* {
+    text-align: left;
+}
+
+/*Attribute*/
+[class]{
+    text-align: center;
+}
+
 /* Type-Specific */
 body 
 {
-    background-color: rgb(203, 219, 252);
+
     padding-left: 3%;
     padding-top: 2%;
     padding-bottom: 3%;
     padding-right: 2%;
+    div{
+        border-radius: 25px;
+    }
 }
 
 hr{
@@ -101,6 +114,10 @@ h3
     justify-content: center;
 }
 
+#thisTest, #isText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 /*Class-Specific*/
 .myFont
 {
@@ -125,3 +142,35 @@ h3
     margin-bottom: 500px;
 }
 
+@media all and (min-width: 500px)
+{
+    body{
+        background-color: rgb(203, 219, 252);
+    }
+}
+
+/*Combinators*/
+header h3{
+    text-align: center;
+}
+
+header > div{
+    background-color: lemonchiffon;
+}
+
+h3 + nav{
+    border-style: ridge;
+    border-radius: 100px;
+}
+
+hr ~ div{
+    border-radius: 50px;
+}
+
+div#menuBar{
+    border-radius: 100px;
+}
+
+ul:has(li){
+    border-style: dashed;
+}

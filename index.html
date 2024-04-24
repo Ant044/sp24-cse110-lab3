@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="styleSheet.css">
     <style>
       li{
-        color: color(xyz 55 55 5);
+        color: color(xyz .2 0 5);
+        width: 100px;
         background-color: color-mix(in srgb, lightblue 95%, cyan);
       }
     </style>
@@ -17,10 +18,11 @@
 
   <body>
     <div id="menuBar">
-      <h3 class="menuBarItem">This</h3>
-      <h3 class="menuBarItem">Is</h3>
+      <h3 class="menuBarItem" id="thisText">This</h3>
+      <h3 class="menuBarItem" id="isText">Is</h3>
       <h3 class="menuBarItem" style="color: crimson;">FIXED</h3>
     </div>
+
     <header>
       <div>
         <h1 id="title" class="myFont">Meeting 7 Plans</h1> 
@@ -29,14 +31,16 @@
         <button class="myButton">DO NOT PRESS</button>
       </div>
       <hr>
-      <h3>Table of Contents</h3>
-      <nav>
-        <ol>
-          <li><a href="#Overview">Overview</a></li>
-          <li><a href="#Specification">Specification</a></li>
-          <li><a href="#Other">Other</a></li>
-        </ol>
-      </nav>
+      <div>
+        <h3>Table of Contents</h3>
+        <nav>
+          <ol>
+            <li><a href="#Overview">Overview</a></li>
+            <li><a href="#Specification">Specification</a></li>
+            <li><a href="#Other">Other</a></li>
+          </ol>
+        </nav>
+      </div>
     </header>
 
     <main>
