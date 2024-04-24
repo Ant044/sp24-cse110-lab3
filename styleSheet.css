@@ -1,0 +1,176 @@
+/* Test Comment */
+
+/* Variables */
+:root{
+    --green2: #34db3c;
+    --green3: hsl(135, 74%, 64%);
+}
+
+/*Universal*/
+* {
+    text-align: left;
+}
+
+/*Attribute*/
+[class]{
+    text-align: center;
+}
+
+/* Type-Specific */
+body 
+{
+
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-right: 2%;
+    div{
+        border-radius: 25px;
+    }
+}
+
+hr{
+    padding: 2px 0px 2px 0px;
+    background-color: mediumblue;
+}
+
+h1
+{
+    color:green;
+    margin:auto;
+    text-align: center;
+    text-decoration:underline;
+}
+
+h2
+{
+    color: var(--green2, rgb(30, 250, 30));
+}
+
+h3
+{
+    color: var(--green3, --green2);
+}
+
+
+/*ID-specific*/
+#title{
+    justify-content: center;
+
+    
+}
+
+#titleImage{
+    margin-top: 10px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 0.1in;
+
+    border-style: groove;
+    border-color: steelblue;
+    border-width: 5px;
+    border-radius: 10px;
+
+    height: 200px;
+    width: auto;
+    max-width: fit-content;
+    min-width: 200px;
+
+    position: relative;
+}
+
+
+#iceImg{
+    margin: 10px 4em 2rem 5vw;
+
+    border-style:ridge;
+    border-color: steelblue;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+#myVideo{
+    display: none;
+}
+
+#menuBar{
+    position: fixed;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 50px 40px 70px;
+    grid-column-end: auto;
+    justify-self: end;
+
+}
+
+#menuBar :hover{
+    background-color: azure;
+}
+
+#meetingList{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#thisTest, #isText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Class-Specific*/
+.myFont
+{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.menuBarItem{
+    display: inline;
+    text-align: center;
+    padding-right: 5px;
+    color:blue
+}
+
+.myButton:hover{
+    color:blueviolet;
+    background-color: lightgreen;
+}
+
+.myButton:active{
+    color:red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 500px;
+}
+
+@media all and (min-width: 500px)
+{
+    body{
+        background-color: rgb(203, 219, 252);
+    }
+}
+
+/*Combinators*/
+header h3{
+    text-align: center;
+}
+
+header > div{
+    background-color: lemonchiffon;
+}
+
+h3 + nav{
+    border-style: ridge;
+    border-radius: 100px;
+}
+
+hr ~ div{
+    border-radius: 50px;
+}
+
+div#menuBar{
+    border-radius: 100px;
+}
+
+ul:has(li){
+    border-style: dashed;
+}
